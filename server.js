@@ -7,7 +7,11 @@ import express from 'express';
 const app = express();
 
 const { PORT } = process.env;
-
+// login
+app.get("/login", function (req, res) {
+    res.send("login");
+});
+// algo
 app.get("/", function (req, res) {
     res.send("Hello world");
 });
